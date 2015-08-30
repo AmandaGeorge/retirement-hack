@@ -10,8 +10,8 @@ angular.module("retirementHack", [])
 					console.log(response.data.items);
 					$scope.keywords = '';
 					$scope.results = response.data.items;
-					// results[i].title
-					// results[i].link
+					// result.title
+					// result.link
 
 				});
 		};

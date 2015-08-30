@@ -29,8 +29,15 @@
     				<input type="submit" value="Search" class="btn btn-success">
     			</form>
     			<hr>
-    			{{results}}
     		</div>
+			<div class="row" ng-show="results.length > 0">
+				<div class="col-md-10 col-md-offset-1" ng-repeat="result in results">
+					<div class="well">
+    					<h3>Article: {{result.title}}</h3>
+    					<a ng-href="{{result.link}}" target="_blank">Click here to read the article</a>
+					</div>
+				</div>
+			</div>
     	</div>
     </div>
 </body>
